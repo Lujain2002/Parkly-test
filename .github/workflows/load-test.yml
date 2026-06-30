@@ -19,6 +19,6 @@ jobs:
       - name: Restore Dependencies
         run: dotnet restore
 
-      # التعديل السحري: البحث التلقائي عن ملف المشروع وتشغيله أينما كان
+      # الحل النهائي: تشغيل المشروع الحالي مباشرة دون تحديد مسار
       - name: Execute NBomber Load Test
-        run: dotnet run --project **/*.csproj -c Release
+        run: dotnet run -c Release
