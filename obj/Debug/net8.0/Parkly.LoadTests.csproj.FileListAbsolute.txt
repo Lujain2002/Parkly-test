@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\ParkingSystem-SignalR\Parkly.LoadTests\obj\Debug\net8.0\Parkly.LoadTests.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\ParkingSystem-SignalR\Parkly.LoadTests\obj\Debug\net8.0\Parkly.LoadTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\ParkingSystem-SignalR\Parkly.LoadTests\obj\Debug\net8.0\Parkly.LoadTests.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\ParkingSystem-SignalR\Parkly.LoadTests\obj\Debug\net8.0\Parkly.LoadTests.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\ParkingSystem-SignalR\Parkly.LoadTests\obj\Debug\net8.0\Parkly.LoadTests.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\ParkingSystem-SignalR\Parkly.LoadTests\obj\Debug\net8.0\Parkly.LoadTests.sourcelink.json
