@@ -18,9 +18,9 @@ namespace Parkly.LoadTests
 
             // --- الإعدادات الفعلية ---
             string signalrHubUrl = "https://parklysignalr.runasp.net/parkingHub";
-            string hiveMqWebSocketUrl = "c335c915f7a540bcb9d83b6f4b0444f3.s1.eu.hivemq.cloud:8884/mqtt";
-            string mqttUser = "esp32_worker";
-            string mqttPass = "ParkMaster2026";
+            string hiveMqWebSocketUrl = "cee7a2163fea4b2da1f4d19cf826b05b.s1.eu.hivemq.cloud:8884/mqtt";
+            string mqttUser = "Lujain";
+            string mqttPass = "Lujain@2002";
 
             var factory = new MqttFactory();
 
