@@ -71,7 +71,7 @@ namespace Parkly.LoadTests
                 }
             })
             .WithLoadSimulations(
-                Simulation.KeepConstant(copies: 10, during: TimeSpan.FromMinutes(1))
+                Simulation.KeepConstant(copies: 30, during: TimeSpan.FromMinutes(1))
             );
 
             // =========================================================
@@ -106,7 +106,7 @@ namespace Parkly.LoadTests
 
                     // 3. محاكاة يوزر حقيقي فاتح الأبليكيشن ووقّف يتطلع على الشاشة لمدة 7 ثوانٍ
                     // خلال ه الـ 7 ثوانٍ رح يقيس الـ NBomber كمية المسجات والضغط اللي بيتحملها السيرفر
-                    await Task.Delay(7000);
+                    await Task.Delay(2000);
 
                     // 4. اليوزر طلع من الأبليكيشن وسكر الاتصال
                     await connection.StopAsync();
@@ -120,7 +120,7 @@ namespace Parkly.LoadTests
             })
             .WithLoadSimulations(
                 // محاكاة دخول 50 مستخدم عادي بنفس الوقت (بتقدر ترفع الرقم لـ 100 أو 200 لتجرب قوة الـ MonsterASP)
-                Simulation.KeepConstant(copies: 50, during: TimeSpan.FromMinutes(1))
+                Simulation.KeepConstant(copies: 100, during: TimeSpan.FromMinutes(2))
             );
 
             // =========================================================
