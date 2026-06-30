@@ -1,28 +1,24 @@
 ﻿name: Parkly Webhook & SignalR Load Test
 
-# تفعيل التشغيل اليدوي للفحص بضغطة زر من الموقع
 on:
   workflow_dispatch:
 
 jobs:
   run-load-test:
-    runs-on: ubuntu-latest # تشغيل الفحص على سيرفر لينكس قوي ومهيأ بالكامل من جيت هاب
+    runs-on: ubuntu-latest
 
     steps:
-      # 1. سحب كود المشروع الحقيقي داخل السيرفر
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 2. تثبيت حزمة الـ .NET SDK المطلوبة لتشغيل كودك (إصدار 8)
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
-      # 3. عمل Restore للمكاتب (NBomber و MQTTnet) بناءً على ملفات الـ csproj الموحدة عندك
       - name: Restore Dependencies
         run: dotnet restore
 
-      # 4. تشغيل فحص الضغط بوضعية الـ Release ليعطي أقصى أداء وقوة ضغط ممكنة
+      # السيرفر سيتوجه مباشرة إلى مجلد المشروع ويشغل ملف الـ csproj الموجود فيه
       - name: Execute NBomber Load Test
         run: dotnet run --project Parkly.LoadTests/Parkly.LoadTests.csproj -c Release
