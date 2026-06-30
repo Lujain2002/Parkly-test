@@ -19,6 +19,6 @@ jobs:
       - name: Restore Dependencies
         run: dotnet restore
 
-      # السيرفر سيتوجه مباشرة إلى مجلد المشروع ويشغل ملف الـ csproj الموجود فيه
+      # التعديل السحري: البحث التلقائي عن ملف المشروع وتشغيله أينما كان
       - name: Execute NBomber Load Test
-        run: dotnet run --project Parkly.LoadTests/Parkly.LoadTests.csproj -c Release
+        run: dotnet run --project **/*.csproj -c Release
